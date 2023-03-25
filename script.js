@@ -25,6 +25,6 @@
     }
     // document.querySelector("div").textContent=cost;
 			//or can use below one also
-	document.getElementById("result").textContent = cost;
+	document.getElementById("#result").textContent = cost;
   }
   
