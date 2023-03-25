@@ -1,6 +1,6 @@
   function minCost(event){
     event.preventDefault(); //use this stop the default behaviour which is page referesh auto
-    var inputElement = document.querySelector('input').value;//.value always return into string
+    var inputElement = document.querySelector('#rope-lengths').value;//.value always return into string
     var arr = inputElement.split(',');  //split all the elements and return it into the array
 
 	  for(var i=0; i< arr.length; i++){
@@ -15,7 +15,7 @@
 //increment cost by res
 	var cost = 0;
     while(arr.length>1){
-      var res = Number(arr[0]) + Number(arr[1]);//write number to convert into number until it will be shown in a string
+      var res = arr[0] + arr[1];//write number to convert into number until it will be shown in a string
       arr.splice(0,2);
 			  //or 
       //arr.shift(); //use this one to remove element from starting
@@ -29,6 +29,6 @@
     }
     // document.querySelector("div").textContent=cost;
 			//or can use below one also
-	document.getElementById("result").textContent = cost;
+	document.getElementById("#result").textContent = cost;
   }
   
