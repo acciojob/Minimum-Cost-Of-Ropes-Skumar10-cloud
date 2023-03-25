@@ -1,6 +1,6 @@
   function minCost(event){
     event.preventDefault(); //use this stop the default behaviour which is page referesh auto
-    var inputElement = document.querySelector('input').value;//.value always return into string
+    var inputElement = document.querySelector('#rope-lengths').value;//.value always return into string
     var arr = inputElement.split(',');  //split all the elements and return it into the array
     
       arr.sort(function(a,b) {return a-b});// sorting the array
