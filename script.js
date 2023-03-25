@@ -1,6 +1,6 @@
   function minCost(){
     // event.preventDefault(); //use this stop the default behaviour which is page referesh auto
-    var inputElement = document.querySelector('#rope-lengths').value;//.value always return into string
+    var inputElement = document.querySelector('input').value;//.value always return into string
     var arr = inputElement.split(',');  //split all the elements and return it into the array
 
 	  for(var i=0; i< arr.length; i++){
@@ -28,7 +28,7 @@
 	arr.sort(function(a,b) {return a-b});
       
     }
-    document.querySelector("div").textContent=cost;
+    document.querySelector("#result").textContent=cost;
 			//or can use below one also
 	// document.getElementById("#result").textContent = cost;
   }
