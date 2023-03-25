@@ -28,8 +28,8 @@
 	arr.sort(function(a,b) {return a-b});
       
     }
-    // document.querySelector("div").textContent=cost;
+    document.querySelector("div").textContent=cost;
 			//or can use below one also
-	document.getElementById("#result").textContent = cost;
+	// document.getElementById("#result").textContent = cost;
   }
   
