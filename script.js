@@ -3,9 +3,9 @@
     var inputElement = document.querySelector('#rope-lengths').value;//.value always return into string
     var arr = inputElement.split(',');  //split all the elements and return it into the array
 
-	  for(var i=0; i< arr.length; i++){
-		  arr[i] = Number(arr[i]);
-	  }
+	  // for(var i=0; i< arr.length; i++){
+		 //  arr[i] = Number(arr[i]);
+	  // }
 	  
       arr.sort(function(a,b) {return a-b});// sorting the array
 //we need to access first two element
@@ -15,7 +15,7 @@
 //increment cost by res
 	var cost = 0;
     while(arr.length>1){
-      var res = arr[0] + arr[1];//write number to convert into number until it will be shown in a string
+      var res = Number(arr[0]) + Number(arr[1]);//write number to convert into number until it will be shown in a string
       cost += res;
 		arr.splice(0,2);
 			  //or 
